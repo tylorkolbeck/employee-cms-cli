@@ -4,7 +4,8 @@
   "description": "CLI CMS to manage employess.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./app.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/tylorkolbeck/employee-cms-cli/issues"
   },
-  "homepage": "https://github.com/tylorkolbeck/employee-cms-cli#readme"
+  "homepage": "https://github.com/tylorkolbeck/employee-cms-cli#readme",
+  "dependencies": {
+    "clear": "^0.1.0",
+    "console.table": "^0.10.0",
+    "inquirer": "^7.1.0",
+    "mysql": "^2.18.1"
+  }
 }
