@@ -12,17 +12,13 @@ init()
 
 // Start the ask for action loop
 function init() {
-  chooseAction().then(async (ans) => {
-    let response = await ans.action()
-    console.table(response)
-    init()
-  })
-
-  // .then((results) => {
-  //   // clear()
-  //   console.log(">>>", results)
-  //   init()
-  // })
+  chooseAction()
+    .then(async (ans) => {
+      let response = await ans.action()
+      console.table(response)
+      init()
+    })
+    .catch((err) => console.log(err))
 }
 
 // Ask for an action to perform in the application
