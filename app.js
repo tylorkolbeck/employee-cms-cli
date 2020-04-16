@@ -82,8 +82,3 @@ function chooseAction() {
     },
   ])
 }
-
-// Exit the application
-// function exit() {
-//   sql.connection.end()
-// }
