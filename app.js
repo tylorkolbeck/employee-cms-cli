@@ -74,7 +74,7 @@ function chooseAction() {
         },
         {
           name: "Exit",
-          value: sql.connection.end,
+          value: process.exit,
         },
       ],
     },
