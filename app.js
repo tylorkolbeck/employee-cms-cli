@@ -6,21 +6,23 @@ require("console.table")
 
 const clear = require("clear")
 // Clear the console when starting the app
-clear()
+// clear()
 
 init()
 
 // Start the ask for action loop
 function init() {
-  chooseAction()
-    .then((ans) => {
-      ans.action()
-    })
-    .then((results) => {
-      clear()
-      console.table(results)
-      init()
-    })
+  chooseAction().then(async (ans) => {
+    let response = await ans.action()
+    console.table(response)
+    init()
+  })
+
+  // .then((results) => {
+  //   // clear()
+  //   console.log(">>>", results)
+  //   init()
+  // })
 }
 
 // Ask for an action to perform in the application
