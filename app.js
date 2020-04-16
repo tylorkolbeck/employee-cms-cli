@@ -43,25 +43,18 @@ function chooseAction() {
         },
         {
           name: "Add Department",
-          value: () =>
-            prompts.addDepartment(queries.insertNewDepartment, chooseAction),
+          value: () => prompts.addDepartment(queries.insertNewDepartment),
         },
         {
           name: "Add role",
-          value: () =>
-            prompts.addRole(
-              queries.getDepartments,
-              queries.addRole,
-              chooseAction
-            ),
+          value: () => prompts.addRole(queries.getDepartments, queries.addRole),
         },
         {
           name: "Add Employee",
           value: () =>
             prompts.addEmployee(
               queries.getEmployeesAndRoles,
-              queries.addEmployee,
-              chooseAction
+              queries.addEmployee
             ),
         },
         {
