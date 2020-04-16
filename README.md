@@ -29,6 +29,10 @@ To start the application, run `npm start`
 
 ## Screen Shots
 
+![Image1](/assets/screen_shot1.png)
+![Image2](/assets/screen_shot2.png)
+![Image3](/assets/screen_shot3.png)
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
